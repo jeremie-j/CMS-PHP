@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<routes>
+    <route path="show" action="show" controller="PostController" params="id"/>
+    <route path="user" action="user" controller="PostController"/>
+    <!-- Authentification -->
+    <route path="authentification" action="Authentification" controller="AuthentificationController"/>
+    <route path="postsignup" action="PostSignUp" controller="AuthentificationController"/>
+    <route path="postsignin" action="PostSignIn" controller="AuthentificationController"/>
+    <route path="postlogout" action="PostLogout" controller="AuthentificationController"/>
+    <!-- Post -->
+    <route path="/" action="index" controller="PostController"/>
+    <route path="postcreatepost" action="PostCreatePost" controller="PostController"/>
+    <route path="post" action="viewPost" controller="PostController"/>
+    <route path="posteditpost" action="PostEditPost" controller="PostController"/>
+    <route path="postremovepost" action="PostRemovePost" controller="PostController"/>
+    <!-- Comment -->
+    <route path="postcreatecomment" action="PostCreateComment" controller="CommentController"/>
+    <route path="postremovecomment" action="PostRemoveComment" controller="CommentController"/>
+</routes>
